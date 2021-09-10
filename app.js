@@ -132,7 +132,7 @@ function calculateTotal() {
 function resetButton() {
   bill.value = "0.00";
   getBillAmount();
-  billPercentage[0].click();
+  billPercentage[2].click();
   noOfPeople.value = "1";
   getNoOfPeople();
 }
