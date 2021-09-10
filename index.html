@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/299455933d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <h2>Tip Calculator</h2> -->
+
+      <div class="row-container">
+        <div class="inner-left">
+          <div class="bill-input">
+            <div class="tip-heading">
+              <p class="heading">Bill</p>
+            </div>
+            <div class="tip-input-field">
+              <i class="fas fa-dollar-sign"></i>
+              <input type="" value="" class="billInput" id="bill" />
+            </div>
+          </div>
+          <div class="tip-percentage">
+            <div class="tip-heading">
+              <p class="heading">Select Tip %</p>
+            </div>
+            <div class="tip-input-value" id="amount-wrapper">
+              <button class="active active-now">5%</button>
+              <button class="active">10%</button>
+              <button class="active">15%</button>
+              <button class="active">20%</button>
+              <button class="active">25%</button>
+              <input id="customInput" placeholder="Custom" type="" />
+            </div>
+          </div>
+          <div class="number-of-person">
+            <div class="tip-heading tip-header-people">
+              <p class="heading">Number of People</p>
+              <p id="warningMsg">Can't be zero</p>
+            </div>
+            <div class="tip-input-field">
+              <i class="fas fa-user"></i>
+              <input
+                type="number"
+                value=""
+                class="billInput"
+                id="no-of-people"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="inner-right">
+          <div class="total-amount">
+            <div class="tip-amount">
+              <p>Tip Amount</p>
+              <p class="p-small">/ person</p>
+            </div>
+            <div class="total-tip">
+              <p id="total-tip">$0.00</p>
+            </div>
+          </div>
+
+          <div class="total-amount total-amount-extra">
+            <div class="tip-amount tip-amount-extra">
+              <p>Total</p>
+              <p class="p-small">/ person</p>
+            </div>
+            <div class="total-tip">
+              <p id="total-amount">$0.00</p>
+            </div>
+          </div>
+
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
